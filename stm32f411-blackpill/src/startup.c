@@ -78,6 +78,64 @@ uint32_t vectors[] __attribute__((section(".isr_vectors"))) =
   0,                                      /* 0x0000 0034 */
   (uint32_t)pendsv_handler,               /* 0x0000 0038 */
   (uint32_t)systick_handler,              /* 0x0000 003c */
+  (uint32_t)WWDG_handler,                 /* 0x0000 0040 */
+  (uint32_t)EXTI16_handler,               /* 0x0000 0044 */
+  (uint32_t)EXTI21_handler,               /* 0x0000 0048 */
+  (uint32_t)EXTI22_handler,               /* 0x0000 004c */
+  (uint32_t)FLASH_handler,                /* 0x0000 0050 */
+  (uint32_t)RCC_handler,                  /* 0x0000 0054 */
+  (uint32_t)EXTI0_handler,                /* 0x0000 0058 */
+  (uint32_t)EXTI1_handler,                /* 0x0000 005c */
+  (uint32_t)EXTI2_handler,                /* 0x0000 0060 */
+  (uint32_t)EXTI3_handler,                /* 0x0000 0064 */
+  (uint32_t)EXTI4_handler,                /* 0x0000 0068 */
+  (uint32_t)DMA1_S0_handler,              /* 0x0000 006c */
+  (uint32_t)DMA1_S1_handler,              /* 0x0000 0070 */
+  (uint32_t)DMA1_S2_handler,              /* 0x0000 0074 */
+  (uint32_t)DMA1_S3_handler,              /* 0x0000 0078 */
+  (uint32_t)DMA1_S4_handler,              /* 0x0000 007C */
+  (uint32_t)DMA1_S5_handler,              /* 0x0000 0080 */
+  (uint32_t)DMA1_S6_handler,              /* 0x0000 0084 */
+  (uint32_t)ADC_handler,                  /* 0x0000 0088 */
+  (uint32_t)EXTI9_handler,                /* 0x0000 009c */
+  (uint32_t)TIM1_BRK_TIM9_handler,        /* 0x0000 00A0 */
+  (uint32_t)TIM1_UP_TIM10_handler,        /* 0x0000 00A4 */
+  (uint32_t)TIM1_TRG_COM_TIM11_handler,   /* 0x0000 00A8 */
+  (uint32_t)TIM1_CC_handler,              /* 0x0000 00AC */
+  (uint32_t)TIM2_handler,                 /* 0x0000 00B0 */
+  (uint32_t)TIM3_handler,                 /* 0x0000 00B4 */
+  (uint32_t)TIM4_handler,                 /* 0x0000 00B8 */
+  (uint32_t)I2C1_EV_handler,              /* 0x0000 00BC */
+  (uint32_t)I2C1_ER_handler,              /* 0x0000 00C0 */
+  (uint32_t)I2C2_EV_handler,              /* 0x0000 00C4 */
+  (uint32_t)I2C2_ER_handler,              /* 0x0000 00C8 */
+  (uint32_t)SPI1_handler,                 /* 0x0000 00CC */
+  (uint32_t)SPI2_handler,                 /* 0x0000 00D0 */
+  (uint32_t)USART1_handler,               /* 0x0000 00D4 */
+  (uint32_t)USART2_handler,               /* 0x0000 00D8 */
+  (uint32_t)EXTI15_10_handler,            /* 0x0000 00E0 */
+  (uint32_t)EXTI17_handler,               /* 0x0000 00E4 */
+  (uint32_t)EXTI18_handler,               /* 0x0000 00E8 */
+  (uint32_t)DMA1_S7_handler,              /* 0x0000 00FC */
+  (uint32_t)SDIO_handler,                 /* 0x0000 0104 */
+  (uint32_t)TIM5_handler,                 /* 0x0000 0108 */
+  (uint32_t)SPI3_handler,                 /* 0x0000 010C */
+  (uint32_t)DMA2_S0_handler,              /* 0x0000 0120 */
+  (uint32_t)DMA2_S1_handler,              /* 0x0000 0124 */
+  (uint32_t)DMA2_S2_handler,              /* 0x0000 0128 */
+  (uint32_t)DMA2_S3_handler,              /* 0x0000 012C */
+  (uint32_t)DMA2_S4_handler,              /* 0x0000 0130 */
+  (uint32_t)OTG_FS_handler,               /* 0x0000 014C */
+  (uint32_t)DMA2_S5_handler,              /* 0x0000 0150 */
+  (uint32_t)DMA2_S6_handler,              /* 0x0000 0154 */
+  (uint32_t)DMA2_S7_handler,              /* 0x0000 0158 */
+  (uint32_t)USART6_handler,               /* 0x0000 015C */
+  (uint32_t)I2C3_EV_handler,              /* 0x0000 0160 */
+  (uint32_t)I2C3_ER_handler,              /* 0x0000 0164 */
+  (uint32_t)FPU_handler,                  /* 0x0000 0184 */
+  (uint32_t)SPI_4_handler,                /* 0x0000 0190 */
+  (uint32_t)SPI_5_handler,                /* 0x0000 0194 */
+  
 };
 
 /****************************************************************************
