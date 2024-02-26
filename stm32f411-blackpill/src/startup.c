@@ -3,6 +3,7 @@
  *
  *   Authors: Daniel Pereira de Carvalho <daniel.carvalho@ufu.br>
  *            Marcelo Barros de Almeida  <marcelo.barros@ufu.br>
+ *            Joao Victor Pereira Delfino   
  *
  ****************************************************************************/
 
@@ -40,6 +41,63 @@ void svc_handler       (void) __attribute__ ((weak, alias("default_handler")));
 void debugmon_handler  (void) __attribute__ ((weak, alias("default_handler")));
 void pendsv_handler    (void) __attribute__ ((weak, alias("default_handler")));
 void systick_handler   (void) __attribute__ ((weak, alias("default_handler")));
+void WWDG_handler (void) __attribute__ ((weak, alias("default_handler")));
+void EXTI16_handler (void) __attribute__ ((weak, alias("default_handler")));
+void EXTI21_handler (void) __attribute__ ((weak, alias("default_handler")));
+void EXTI22_handler (void) __attribute__ ((weak, alias("default_handler")));
+void FLASH_handler (void) __attribute__ ((weak, alias("default_handler")));
+void RCC_handler (void) __attribute__ ((weak, alias("default_handler")));
+void EXTI0_handler (void) __attribute__ ((weak, alias("default_handler")));
+void EXTI1_handler (void) __attribute__ ((weak, alias("default_handler")));
+void EXTI2_handler (void) __attribute__ ((weak, alias("default_handler")));
+void EXTI3_handler (void) __attribute__ ((weak, alias("default_handler")));
+void EXTI4_handler (void) __attribute__ ((weak, alias("default_handler")));
+void DMA1_S0_handler (void) __attribute__ ((weak, alias("default_handler")));
+void DMA1_S1_handler (void) __attribute__ ((weak, alias("default_handler")));
+void DMA1_S2_handler (void) __attribute__ ((weak, alias("default_handler")));
+void DMA1_S3_handler (void) __attribute__ ((weak, alias("default_handler")));
+void DMA1_S4_handler (void) __attribute__ ((weak, alias("default_handler")));
+void DMA1_S5_handler (void) __attribute__ ((weak, alias("default_handler")));
+void DMA1_S6_handler (void) __attribute__ ((weak, alias("default_handler")));
+void ADC_handler (void) __attribute__ ((weak, alias("default_handler")));
+void EXTI9_handler (void) __attribute__ ((weak, alias("default_handler")));
+void TIM1_BRK_TIM9_handler (void) __attribute__ ((weak, alias("default_handler")));
+void TIM1_UP_TIM10_handler (void) __attribute__ ((weak, alias("default_handler")));
+void TIM1_TRG_COM_TIM11_handler (void) __attribute__ ((weak, alias("default_handler")));
+void TIM1_CC_handler (void) __attribute__ ((weak, alias("default_handler")));
+void TIM2_handler (void) __attribute__ ((weak, alias("default_handler")));
+void TIM3_handler (void) __attribute__ ((weak, alias("default_handler")));
+void TIM4_handler (void) __attribute__ ((weak, alias("default_handler")));
+void I2C1_EV_handler (void) __attribute__ ((weak, alias("default_handler")));
+void I2C1_ER_handler (void) __attribute__ ((weak, alias("default_handler")));
+void I2C2_EV_handler (void) __attribute__ ((weak, alias("default_handler")));
+void I2C2_ER_handler (void) __attribute__ ((weak, alias("default_handler")));
+void SPI1_handler (void) __attribute__ ((weak, alias("default_handler")));
+void SPI2_handler (void) __attribute__ ((weak, alias("default_handler")));
+void USART1_handler (void) __attribute__ ((weak, alias("default_handler")));
+void USART2_handler (void) __attribute__ ((weak, alias("default_handler")));
+void EXTI15_10_handler (void) __attribute__ ((weak, alias("default_handler")));
+void EXTI17_handler (void) __attribute__ ((weak, alias("default_handler")));
+void EXTI18_handler (void) __attribute__ ((weak, alias("default_handler")));
+void DMA1_S7_handler (void) __attribute__ ((weak, alias("default_handler")));
+void SDIO_handler (void) __attribute__ ((weak, alias("default_handler")));
+void TIM5_handler (void) __attribute__ ((weak, alias("default_handler")));
+void SPI3_handler (void) __attribute__ ((weak, alias("default_handler")));
+void DMA2_S0_handler (void) __attribute__ ((weak, alias("default_handler")));
+void DMA2_S1_handler (void) __attribute__ ((weak, alias("default_handler")));
+void DMA2_S2_handler (void) __attribute__ ((weak, alias("default_handler")));
+void DMA2_S3_handler (void) __attribute__ ((weak, alias("default_handler")));
+void DMA2_S4_handler (void) __attribute__ ((weak, alias("default_handler")));
+void OTG_FS_handler (void) __attribute__ ((weak, alias("default_handler")));
+void DMA2_S5_handler (void) __attribute__ ((weak, alias("default_handler")));
+void DMA2_S6_handler (void) __attribute__ ((weak, alias("default_handler")));
+void DMA2_S7_handler (void) __attribute__ ((weak, alias("default_handler")));
+void USART6_handler (void) __attribute__ ((weak, alias("default_handler")));
+void I2C3_EV_handler (void) __attribute__ ((weak, alias("default_handler")));
+void I2C3_ER_handler (void) __attribute__ ((weak, alias("default_handler")));
+void FPU_handler (void) __attribute__ ((weak, alias("default_handler")));
+void SPI_4_handler (void) __attribute__ ((weak, alias("default_handler")));
+void SPI_5_handler (void) __attribute__ ((weak, alias("default_handler")));
 
  /****************************************************************************
  * External Data
